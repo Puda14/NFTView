@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../styles/launchview.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.nftview.launch.LaunchController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="221.0" styleClass="launch_logo_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/logo2.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NFT" textAlignment="CENTER">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font></Text>
+         </children>
+      </VBox>
+      <ImageView fitHeight="69.0" fitWidth="113.0" layoutX="266.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/X-Logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="109.0" fitWidth="84.0" layoutX="467.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/logo-nft.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="93.0" fitWidth="113.0" layoutX="374.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/logo-line-chart.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="255.0" layoutY="282.0" text="Analyze the correlation between NFT articles and products" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="386.0" layoutY="324.0" mnemonicParsing="false" onAction="#switchScene" text="Start" AnchorPane.bottomAnchor="36.0" />
+   </children>
+</AnchorPane>
